@@ -1,4 +1,4 @@
-read_file_name='subsetData_516_visit1.fasta'
+read_file_name='input_data_516_visit1.fasta'
 raw_data=open(read_file_name,"r")
 a=raw_data.read()
 b=a.replace('\n','')
@@ -38,7 +38,7 @@ i='\n'.join(h)
 j=i.replace('\n','',1).replace('m','>m').replace('s','s\n')
 print(j)
 
-writing_file_name='subsetData_516_visit1.txt'
+writing_file_name='result_data_516_visit1.txt'
 mod_data=open(writing_file_name, 'w')
 mod_data.write(j)
 mod_data.close()
